@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web_mobile responcive</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .main{
+            height: 1370px;
+            width: 90%;
+            margin-left: 5%;
+     box-sizing: border-box;
+        }
+        /* --------------------------------------navbar start----------------------------- */
+        .nav{
+            margin-top: 10px;
+            padding-top: 20px;
+            height: 90px;
+            width: 100%;
+         display: flex; 
+         align-items: center;
+        }
+        .nav>a{
+          font-size: 2rem;
+          text-decoration: none;
+          margin-left: 2%;
+        }
+        .nav >ul{
+          margin-left: 10%;
+         display: flex; 
+         align-items: center;
+        } 
+        .nav>ul>li{
+          text-align: center;
+        margin-left: 5vw;
+        list-style: none;
+        }
+         .nav>ul>li>a>select{
+            border: none;
+          }
+          .nav>ul>li>a{
+            text-decoration: none;
+          }
+          li:hover{
+            background-color: mediumslateblue;
+          }
+          .nav>ul>i{
+            display: none;
+          }
+          /*-----------------------------------text start-------------------  */
+          .text{
+            text-align: center;
+            justify-content: center;
+            font-size: 80px;
+            padding: 0% 20% 0% 20%;
+          }
+          .text .save{
+            border-radius: 10%;
+            background-color: rgb(146, 240, 146);
+            font-size: 1rem;
+            display: inline;
+          }
+          .text span{
+            border-radius: 20%;
+            background-color: yellowgreen;
+            color: aliceblue;
+          }
+          .save3{
+            font-size:28px ;
+          }
+          input{
+            height: 44px;
+            width: 40%;
+          }
+          input[type="button"]{
+            border-radius: 0px 10px 10px 0px;
+            height: 42px;
+            width: 13%;
+            font-size: 20px;
+            background-color: blueviolet;
+          }
+          /*--------------------------overview start------------------------  */
+          .bar{
+            height: 600px;
+            width: 100%;
+            margin-left: 10%;
+          }
+          .bar img{
+            height: 590px;
+            width: 90%;
+          }
+          .trusted{
+            height: 200px; 
+            width: 100%;
+            
+          }
+          .trusted h1{
+            margin-left: 20%;
+          }
+          .trusted li{
+            display: inline;
+          }
+          .footimg img{
+            width: 6%;
+            height: 10%;
+            margin-left: 10%;
+          }
+          /*--------------------------------timeline start-------------------------  */
+          .timeline{
+            height: 740px;
+            width: 100%;
+           margin-top: 5%;
+            background-color: rgb(241, 241, 236);
+          }
+          .timeline img{
+            margin: 2% 0% 0% 10%;
+            width: 57%;
+          }
+          .timeline3{
+            height:80%;
+            width: 25%;
+            margin: 5% 5% 0% 0%;
+            float: right;
+            background-color: #e2cccc;
+          }
+          .timeline3 div{
+            height: 20%;
+            width: 100%;
+            margin-top: 20px;
+            padding: 15px; 
+          }
+          .timeline3 div:hover{
+            border-left: 10px solid mediumslateblue;
+            background-color:  rgb(150, 191, 238); 
+          }
+          /* ----------------------------------work easy------------------------------ */
+          .make{
+            height:600px;
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            background-color: #ede6e6;
+          }
+          .make1{
+            height: 200px;
+            width: 30%;
+            padding:30px;
+          }
+          .make2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+            width: 95%;
+          }
+          .make1 i{
+            height: 50px;
+            width: 50px;
+            padding-left: 8px;
+            padding-top: 8px;
+            font-size: 30px;
+            border-radius: 40px;
+            color: orange;
+            background-color: aquamarine;
+          }
+          /*---------------------second chart-------------  */
+          .bar2{
+            height: 450px;
+            width: 100%;
+            display:flex;
+            padding-top: 2%;
+            align-items: center;
+            justify-content: space-around;
+          }
+         .bar2 p {
+          position: relative;
+           top: 20%;
+           left: -12%;
+         }
+         .bar2 button{
+          position: relative;
+  
+          top: 40%;
+          left: -22%;
+          height: 39px;
+          width: 160px;
+          border-radius: 20px;
+          background-color: rgb(155, 155, 223);
+         }
+         .bar2img{
+          margin-right:5%;
+          height: 90%;
+          width: 40%;
+         }
+         /* --------------------------------------costemers love------------------------ */
+         .why{
+          padding-top: 40px;
+          height: 500px;
+          background-color: azure;
+          width: inherit;
+          display: flex;
+          flex-wrap: wrap;
+          text-align: center;
+          justify-content: center;
+          
+         }
+         .why h2{
+          width: 100%;
+
+         }
+         .why p{
+          width: 100%;
+         }
+         .whyi{
+          height: 48px;
+          width: 48px;
+          border-radius: 50%;
+          margin:0% 1% 0% 10%;
+          
+         }
+         .why button{
+          width: 80%;
+          border-radius: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: rgb(139, 139, 224);
+         }
+         .why > button> img{
+          height: 60px;
+          width: 150px;
+          color: black;
+          background-color: #fff;
+          border-radius: 20px;
+          margin-left: 10%;
+         }
+         .whyi1{
+          display: none;
+         }
+         .why>span{
+          display: none;
+         }
+         /* ------------------------------footer start------------------------ */
+         .foot{
+          height: 200px;
+          width: 95%;
+          margin-right: 5%;
+          background-color: rgb(116, 116, 238);
+          display: flex;
+          flex-wrap: wrap;
+         } 
+          .foot>ul{
+
+          margin-left:15%;
+          margin-top: 2%;
+          align-items: center;
+          justify-content: space-evenly; 
+                 
+         }
+         .foot img{
+          height: 60px;
+          width: 90px;
+         } 
+         .copy{
+          height: 80px;
+          width: 95%;
+          padding-top: 2%;
+          background-color: rgb(116, 116, 238);
+          border-top: 2px solid black;
+         }
+         .copy p{
+          margin-right: 40%;
+          display: inline;
+          font-size: 1.5rem;
+         }
+         .copy i{
+          display: inline;
+          border: 2px solid black;
+          height: 60%;
+          width: 5%;
+          border-radius: 50%;
+          font-size: 2rem;
+          background-color: #fff;
+         }
+/*  ----------------------------------------media query---------------------------------- */
+
+         @media screen and (max-width:920px) {
+        .nav>ul>li{
+          display: none;
+        }
+        .nav>ul>i{
+            display: inline;
+            height: 40px;
+        }
+        .nav{
+          align-items: center;
+          justify-content: space-around;
+        }
+        .text{
+         margin: 0px;
+         padding: 0px;
+          font-size: 10px; 
+        }
+        .text>.save>span{
+          display: none;
+        }
+        .text>.save2{
+          font-size: 1.5rem;
+          padding: 0px 80px;
+        }
+        .text>.save3{
+          font-size: 17px;
+          padding: 0px 80px;
+        }
+        .text>.save4>input{
+          width: 80%;
+          margin: 0px;
+          padding: 0px;
+        border-radius: 10px;
+        } 
+        .trusted>h1{
+          font-size: 1rem;
+        } 
+        .timeline{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+        }
+        .timeline>img{
+          height: 40%;
+          width: 90%;
+          margin: 0px;
+        }
+        .timeline3{
+          height: 400px;
+          width: 90%;
+          padding-left: 5%;
+        }
+        .timeline3>div{
+          margin: 0px;
+          padding: 0px;
+          width: 90%;
+        }
+        .make{
+          display: block;
+          margin: 0px;
+          padding-left: 10%;
+          }
+          .make2{
+            display: block;
+          }
+        .m1{
+          height: 140px;
+            width: 80%;
+           margin: 0px;
+           padding: 0px;
+           font-size: 10px;
+        }
+        .make> .m2{
+         display: none;
+        }
+        .bar2{
+          height: 600px;
+          display: block;
+          text-align: center;
+          justify-content: center;
+        }
+         .bar2>img{
+          height: 350px;
+          width: 70%;
+          margin: 0px;
+          padding: 0px;
+         }
+         .bar2>p{
+          margin-top: 20px;
+          padding: 0px;
+          position: static;
+         }
+         .bar2>h2{
+          margin-top: 20px;
+          padding: 0px;
+         }
+         .bar2>button{
+          height: 60px;
+          width: 70%;
+          margin: 10px ;
+          padding: 0px;
+          position: static;
+         }
+         .why{
+          height: 500px;
+          display: block;
+          text-align: center;
+          justify-content: center;
+         }
+         .why>h2{
+          font-size: 1rem;
+         }
+         .why>img{
+          display: none;
+         }
+         .why>h6{
+          display: none;
+         }
+         .why>.whyi1{
+          height: 60px;
+          width: 60px;
+          border-radius: 50%;
+          margin-left: 45%;
+          margin-top: 20px;
+          display: block;
+         }
+         .why>span{
+          display: block;
+          margin: 20px 0px;
+         }
+         .why>button{
+          display: block;
+          width: 100%;
+          border-radius: 0px;
+          font: 0.7rem;
+         }
+         .why>button>img{
+          height: 40px;
+          width: 80px;
+         }
+         .foot{
+          display: block;
+          height: 300px;
+          width: 100%;
+         }
+         .foot>ul {
+            margin: 0px;
+            padding: 0px;
+         }
+         .foot>ul>li{
+          display: none;
+         }
+         .foot>ul>li>a{
+          text-decoration: none;
+          color: #ede6e6;
+         }
+         .foot>ul>.footimage{
+          display: block;
+          height: 60px;
+          width: 120px;
+          margin-left:25% ;
+          margin-top: 10px;
+         }
+         .foot>ul>li:nth-child(1){
+          display: block;
+          margin-left: 25%;
+          margin-top: 10px;
+         }
+         .copy{
+          height: 40px;
+          width: 100%;
+          color: white;
+         }
+         .copy>p{
+          font-size: 0.8rem;
+          margin: 2px 20px;
+         }
+         .copy>i{
+          display: none;
+         }
+         }
+         
+    </style>
+</head>
+<body>
+    <div class="main">
+      <!-- ---------------------------------navbar start------------------------- -->
+        <div class="nav">
+            <a class="logo" href="">team.flow</a>
+             <ul>
+              <li><a href="">how its work
+                <select name="" id=""></select></a>
+             </li>
+                <li><a href="">prodects
+                    <select name="" id=""></select></a>
+                </li>
+                <li> <a href="">pricing
+                    <select name="" id=""></select></a>
+                </li>
+                <li><a href="">esources
+                    <select name="" id=""></select></a>
+                </li>
+                <li> <a href="">log in</li></a>
+                <li> <a href="">get started free</li></a>
+                <i class="fa-solid fa-bars"></i>
+                </ul>
+        </div>
+            <!---------------------------------------text start-------------------------------  -->
+        <div class="text">
+            <p class="save"><span>save 90%</span>get account59$</p>
+            <p class="save2">manage the team everyone wants to be on</p>
+            <p class="save3">sipmle platform that lets you master what great managers do best,and drive team performence. </p>
+            <p class="save4"><input type="email" name="" id="" placeholder="name@Yourcompany.com"><input type="button" value="try its free"></p>
+        </div>
+        <!--------------------overview start --------------------->
+         <div class="bar">
+          <img src="images/Graph 2 1.png" alt="">
+      </div>         
+      <div class="trusted">
+        <h1>trusted by over<b>+10,000</b> world's best Team </h1> 
+        <ul>
+          <li class="footimg"><img src="https://th.bing.com/th/id/OIP.TqcnDevHeoB21zEWeNC8AwHaE8?w=252&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt=""></li>
+          <li class="footimg"><img src="https://www.spekless.com/wp-content/uploads/2018/03/Airbnb-Logo.png" alt=""></li>
+          <li class="footimg"><img src="https://blog.dailydialogues.nl/wp-content/uploads/2015/08/facebook.png" alt=""></li>
+          <li class="footimg"><img src="https://offers.hubspot.com/hubfs/HubSpot%20Logo-3-1.png" alt=""></li>
+          <li class="footimg"><img src="https://static.hub.91mobiles.com/wp-content/uploads/2021/02/Slack-logo.png" alt=""></li>
+        </ul>
+      </div>  
+    </div>
+    <!---------------------------------timeline-------------------  -->
+       <div class="timeline">
+           <img src="images/Group 25.png" alt="">
+     <div class="timeline3">
+      <div>
+      <h4>servey your team</h4>
+      <p>powerfull qusonses that get to the heart of how team member really fill.</p></div>
+      <div>
+      <h4>resolve issues quickly</h4>
+      <p>anonymous messasing that connects manager and emloyees</p></div>
+      <div>
+      <h4>play your 1-on-1s</h4>
+      <p>plans mittings togethers and give astake emloyee and team</p></div>
+      <div>
+      <h4>track your prosess</h4>
+      <p>easy-to-read reoprts and shareble result help manager and teams</p></div>
+     </div>
+    </div>
+    <!--=---------------------work details  -->
+     <div class="make">
+      <div class="make2">
+       <h1>make your work easies</h1></div>
+       <div class="make1  m1">
+       <i class="fa-solid fa-chart-simple"></i>
+       <h1>team survey & reports</h1>
+       <p>sort,anonymous survey track your team's need weekly so can you focus</p>
+      </div>
+      <div class="make1 m1">
+       <i class="fa-solid fa-address-book"></i>
+       <h1>collabarative1:1</h1>
+       <p>build relationships by planing 1-on-1 and stat mitings</p>
+      </div>
+      <div class="make1 m1">
+        <i class="fa-solid fa-chalkboard-user"></i>
+        <h1>learning center</h1>
+        <p>quickyget solutions tailored to your porsinal challages from manager.</p>
+       </div>
+       <div class="make1 m2">
+        <i class="fa-solid fa-message"></i>
+        <h1>anonymouses messasing</h1>
+        <p>devlop trust in a safe channel for important convorsations.</p>
+       </div>
+       <div class="make1 m2">
+        <i class="fa-solid fa-sitemap"></i>
+        <h1>convorsation engine</h1>
+        <p>comunacate confidently with recommedend taking points.</p>
+       </div>
+       <div class="make1 m2">
+        <i class="fa-solid fa-screwdriver-wrench"></i>
+        <h1>excucives manager</h1>
+        <p>acess manager tips,activiteis and best practices from our team of exports.</p>
+       </div>  
+      </div>
+       <!----------------------------chart2--------------------  -->
+      <div class="bar2">
+        <img  class="bar2img" src="images/Group 26.png" alt="">
+        <h2>We work how you
+          work everyday</h2>
+          <p>
+            Since the easiest things to use actually get used, <br> we adapts to the way your team works – not the other way around.
+          </p>
+          <button>get stared fo free</button>
+        
+    </div>
+     <!------------------------------last text------------------------  -->
+    <div class="why">
+      <h2>Why customers love
+        working with us</h2>
+        <p>“It's amazing what has helped me learn about my team. <br>
+          I don't worry about blindspots anymore, and 1-on-1s have never <br>
+          been more productive. The team loves it.”</p>
+          <img class="whyi1" src="https://th.bing.com/th/id/OIP.wcpGn_ZYvjREmNCgiFQ2GQHaHa?w=168&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+       <span> alina robretson <br>cs at collage</span>
+         <img class="whyi" src="https://th.bing.com/th/id/OIP.wcpGn_ZYvjREmNCgiFQ2GQHaHa?w=168&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+            <h6> alina robretson <br>cs at collage</h6>
+         <img class="whyi" src="https://th.bing.com/th/id/OIP.fFzxKeNnI8IONFpM0nNPzAHaE8?w=291&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+        <h6> farbcisco bell <br> designer in microsoft</h6>
+         <img class="whyi" src="https://th.bing.com/th/id/OIP.xrTt9U6768J2y2TBur-l5QHaE8?w=268&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">           
+        <h6>alafert willson <br> dovloper in air bnb</h6>
+        <button>
+          <h1>84% of employees who use <br>
+            trust their direct manager</h1>
+            <img src="https://th.bing.com/th?id=OIP.H_EG-bQUMBwF07JG4KAtrwHaCj&w=349&h=120&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="">
+            <img src="https://th.bing.com/th?id=OIP.oBB-ZYnEziC3LNPn8F5pRAHaBx&w=350&h=84&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="">        
+          </button>
+        </div>
+        <!-------------------------------footer--------------------------------  -->
+        <div class="foot">
+          <ul>
+            <li><a href=""><b>company</b></a></li>
+            <li><a href="">about us</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">contact us</a></li>
+            </ul>
+            <ul>
+            <li><a href=""><b>Support</b></a></li>
+            <li><a href="">help center</a></li>
+            <li><a href="">safety center</a></li>
+            <li><a href="">community</a></li>
+          </ul>
+           <ul> <li><a href=""><b>Legal</b></a></li>
+            <li><a href="">cookies policy</a></li>
+            <li><a href="">privcy policy</a></li>
+            <li><a href="">terms of servies</a></li>
+            </ul>
+            <ul>
+            <li><a href=""><b>install app</b></a></li>
+            <li class="footimage"><a href=""><img src="https://th.bing.com/th/id/OIP.GZhmkG200Ppz-ezObC3JfQAAAA?w=294&h=114&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt=""></a></li>
+            <li class="footimage"><a href=""><img src="https://th.bing.com/th/id/OIP.fn_qr7uzdYZfa8zVcFbNYgHaCj?w=328&h=120&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt=""></a></li>
+          
+          </ul>
+        </div>
+        <div class="copy">
+         <p> &copy; 2020 - All rights reserved   
+        </p>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-solid fa-futbol"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+        </div>
+</body>
+</html>
+
+
+
+
