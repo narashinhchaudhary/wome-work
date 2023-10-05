@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /* div{
+        div{
             width: 70%;
             height: 250px;
         }
@@ -22,7 +22,7 @@
             border: 2px solid  rgb(150, 149, 149);
             height: 50px;
             display: block;
-        } */
+        } 
         div{
             border: 2px solid red;
             height: 100px;
@@ -32,7 +32,7 @@
         }
     </style>
 </head>
-<!-- <body>
+ <body>
     body (great-great-grand parent)
     <div> div(grand-grand parent)
         <ul>ul(grand parent)
@@ -49,43 +49,5 @@
            }) 
         })
     </script>
-</body> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<body>
-    body (great-great-grand parent)
-    <div> div(grand-grand parent)
-        <ul>ul(grand parent)
-            <li> li(parent)
-               <button> click</button>
-            </li>
-        </ul>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-           $("button").click(function () {
-            $("div").animate({
-                "height":"200px",
-                "left":"30%",
-                "top":"50%"
-            })
-           })
-        })
-    </script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-     
 </body>
 </html>
