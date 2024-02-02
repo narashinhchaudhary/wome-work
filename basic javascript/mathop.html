@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Math opration</title>
+</head>
+<body>
+  <form action="" name="myform">
+	<table align="center">
+		<tr>
+			<td colspan="2">
+				<h2>math opration</h2>
+		<label for="number1">number1:</label>
+		<input type="text" id="num1" name="num1">
+	</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+	<label for="number2">number2:</label>
+	<input type="text" id="num2" name="num2">
+</td>
+</tr>
+<tr>
+	<td colspan="2">
+  <input type="button" value="+" onclick ="sum ();">
+  <input type="button" value="-" onclick="sub ()">
+  <input type="button" value="*" onclick="multi ()">
+  <input type="button" value="/" onclick="div ()">
+<input type="button" value="%" onclick="mod ()">
+</td>
+</tr>
+<tr>
+	<td colspan="2">
+		answer is:<span id="result" style="color: blue;"></span>
+	</td>
+	</tr>
+</table>
+  </form>
+
+  <script>
+	
+	function sum () {
+		let a = document.getElementById("num1").value ;
+		let b = document.getElementById("num2").value ;
+		 let c = +a + +b
+
+		 console.log(c)
+		 document.getElementById("result").innerText = `num1 + num2 is: ${c}` ;
+	}
+	function sub () {
+		let a = document.getElementById("num1").value ;
+		let b = document.getElementById("num2").value ;
+		 let c = +a - +b
+
+		 console.log(c)
+		 document.getElementById("result").innerText = `num1 - num2 is: ${c}`  ;
+	}
+	function multi () {
+		let a = document.getElementById("num1").value ;
+		let b = document.getElementById("num2").value ;
+		 let c = +a * +b
+
+		 console.log(c)
+		 document.getElementById("result").innerText = `num1 * num2 is: ${c}`  ;
+	}
+	function div () {
+		let a = document.getElementById("num1").value ;
+		let b = document.getElementById("num2").value ;
+		 let c = +a / +b
+
+		 console.log(c)
+		 document.getElementById("result").innerText = `num1 / num2 is: ${c}`  ;
+	}
+	function  mod () {
+		let a = document.getElementById("num1").value ;
+		let b = document.getElementById("num2").value ;
+		 let c = +a % +b
+
+		 console.log(c)
+		 document.getElementById("result").innerText = `num1 % num2 is: ${c}`  ;
+	}
+	
+  </script>
+</body>
+</html>

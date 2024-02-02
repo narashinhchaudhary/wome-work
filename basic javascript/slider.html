@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+           
+        }
+        .gallery{
+width: 100%;
+
+        }
+        #gallery-container, #control {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            gap: 20px;
+            height: 400px;
+
+           
+            
+        }
+      
+        .item{
+           height: 100px;
+           width: 100px;
+            transition: all 0.4s ease-in-out;
+           
+            
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div id="gallery-container">
+            <img class="item " id="item1" src="https://th.bing.com/th/id/OIP.t_lZqLdqtdKHKilP8E1S-gHaEo?w=255&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" data-index="1">
+            <img class="item " id="item2" src="https://th.bing.com/th/id/OIP.JWcxGFK1DDCMjBvGT8kVhAHaEK?w=283&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" data-index="2">
+            <img class="item " id="item3"  src="https://th.bing.com/th/id/OIP.ikn5BzWK2OAfzJ1rjEsX3QHaEo?w=244&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" data-index="3">
+            <img class="item " id="item4" src="https://th.bing.com/th/id/OIP.JWcxGFK1DDCMjBvGT8kVhAHaEK?w=283&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" data-index="4">
+          <img class="item "  id="item5" src="https://th.bing.com/th/id/OIP.ikn5BzWK2OAfzJ1rjEsX3QHaEo?w=244&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" data-index="5">
+            <img class="item " id="item6" src="https://th.bing.com/th/id/OIP.JWcxGFK1DDCMjBvGT8kVhAHaEK?w=283&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" data-index="6">
+          <img class="item " id="item7"  src="https://th.bing.com/th/id/OIP.ikn5BzWK2OAfzJ1rjEsX3QHaEo?w=244&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" data-index="7">
+             
+        </div>
+        <div id="control">
+            <button id="prev" onclick="prev()">prev &lt;</button>
+   <button id="next" onclick="next()">next &gt;</button>
+        </div>
+    </div>
+    <script>
+ var container = document.getElementById('gallery-container');
+    function prev() {
+      var firstchild =  container.firstElementChild
+      container.append(firstchild);
+     
+    
+    }
+    function next() {
+      var lastchild =  container.lastElementChild
+      container.prepend(lastchild)
+      
+    
+    }
+         </script>
+</body>
+</html>

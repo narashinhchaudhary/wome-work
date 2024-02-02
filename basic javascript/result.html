@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="form">
+        <table align="center">
+    
+    <tr>
+        <td colspan="2"> <label for=""><h1>cheak marks</h1></label></td>
+    </tr>
+    <tr>
+           <td colspan="2"><span id="com" style="color: red;"></span></p></td>
+    <tr>
+        <td> <label for="c">c Language:</label></td>
+        <td> <input type="text" id="cl" name="cp"   min="0" max="100" > out of 100</td>
+    </tr>
+    <tr>
+        <td> <label for="c">c++ Language:</label></td>
+        <td> <input type="text" id="c++" name="c++"  min="0" max="100" > out of 100</td>
+    </tr>
+    <tr>
+        <td> <label for="database">database:</label></td>
+        <td> <input type="text" id="database" name="cl"  min="0" max="100" > out of 100</td>
+    </tr>
+    <tr>
+        <td> <label for="HTML">HTML:</label></td>
+        <td> <input type="text" id="HTML" name="cl" min="0" max="100" > out of 100</td>
+    </tr>
+    <tr>
+        <td> <label for="css">CSS:</label></td>
+        <td> <input type="text" id="css" name="css"  min="0" max="100" > out of 100</td>
+    </tr>
+    <tr>
+        <td> <label for="php">PHP:</label></td>
+        <td> <input type="text" id="php" name="php"  min="0" max="100" > out of 100</td>
+    </tr>
+    <tr>
+        <td> <label for="corejava">CORE JAVA:</label></td>
+        <td> <input type="text" id="cj" name="cj"  min="0" max="100" > out of 100</td>
+    </tr>
+    
+    <tr>
+        <td colspan="2" align="center"><input type="button" value="Result" onclick="myf()"></td>
+    </tr>
+    <tr>
+        <td>TOTAL IS:<span id="total" style="color: blue;"></span>/700</td>
+        <td align="end"> PER IS :<span id="per" style="color: blue;"></span>%</td>
+    </tr>
+    <tr>
+       
+        <td colspan="2" align="center">GRADE:<span id="ger" style="color: blue;"></span></td>
+    </tr>
+</table>
+</form>
+
+<script>
+    function myf() {
+        let a = document.form.cp.value;
+        let b = document.getElementById("c++").value;
+        let c = document.getElementById("database").value;
+        let d = document.getElementById("HTML").value;
+        let e = document.getElementById("css").value;
+        let f = document.getElementById("php").value;
+        let g = document.getElementById("cj").value;
+
+        let total = +a + +b + +c + +d + +e + +f+ +g;
+        let per = (total*100/700).toFixed(2);
+        document.getElementById("total").innerHTML=total;
+        document.getElementById("per").innerHTML=per ;
+
+        if (  a == "" || b == "" || c == "" || d == ""  || e == "" || f == "" || g == "" ) {
+            document.getElementById("com").innerHTML=  "<H2>all filed are  required</H2>" ;
+            document.getElementById("total").innerHTML="FAIL ";
+        document.getElementById("per").innerHTML=" FAIL";
+        } 
+        
+        else{
+
+        if (per >= 95) {
+            document.getElementById("ger").innerHTML=  "A+" ;
+        } 
+
+        if (per >= 85) {
+            document.getElementById("ger").innerHTML=  "A";
+        }  
+           
+        if (per >= 75) {
+            document.getElementById("ger").innerHTML=  "B+";
+        } 
+        if (per >= 55) {
+            document.getElementById("ger").innerHTML=  "B";
+        } 
+        if (per >= 33) {
+            document.getElementById("ger").innerHTML=  "C";
+        } else{
+            document.getElementById("ger").innerHTML=  "FAIL";
+            document.getElementById("ger") .style ="color:red";
+            document.getElementById("per") .style ="color:red";
+            document.getElementById("total") .style ="color:red";
+            document.getElementById("com").innerHTML=  "" ;
+       
+        }
+      }   
+        }
+    
+</script>
+</body>
+</html>
